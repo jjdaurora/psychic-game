@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Psychic Game</title>
+	<title>Guess the Letter</title>
+	<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 </head>
+
 <body>
+<div id="wrapper">
+	<div class="container">
+		
+		<header id="game-header">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Pyschic Letters</h1>
+					<h3>Can you guess the letter I'm thinking of?<h3>
+					<h6>Click any key to get started.</h6>
+				</div>
+			</div>
+		</header>
 
-<h1>Pyschic Game</h1>
-<p>Guess what letter I'm thinking of.</p>
+		<section id="game-area">
+			<div class="row" id="score-area">
+				<div class="col-md-4 col-xs-1">
+					<div class="ball">
+						<span class="scores" id="wins"></span>
+					</div>
+					<h4 class="counter-caption">Wins</h4>
+				</div>
+				<div class="col-md-4 col-xs-1">
+					<div class="ball">
+						<span class="scores" id="losses"></span>
+					</div>
+					<h4 class="counter-caption">Losses</h4>
+				</div>
+				<div class="col-md-4 col-xs-1">
+					<div class="ball">
+						<span class="scores" id="guesses"></span>  
+					</div>
+					<h4 class="counter-caption">Guess Count</h4>
+				</div> 
+			</div>
+		</section>
 
-<h2><span id="wins"></span></h2>
-<h2><span id="losses"></span></h2>
-<h2><span id="guesses"></h2>
-<h2><span id="guesses-so-far"></h2>
+			<section class="row" id="guesses-area">
+					<div class="col-md-12">
+						<h4>Guesses Made So Far</h4>
+					    <hr/>
+						<div id="guesses-so-far"></div>
+					</div>
+			</section>
+			
+			<section class="row" id="alert-area">
+					<div class="col-md-12">
+						<div id="game-alert"></div>
+					</div>
+			</section>
 
-
-
-
-
-	<script src="assets/javascript/game.js"></script>
+	</div>	
+	<footer id="footer">
+		<div class="container">
+			<hr/>
+			<span class="text-muted">a game made with javascript &amp; love</span>
+			<div class="text-muted">by JJ</div>
+		</div>
+	</footer>
+</div>
+		<script src="assets/javascript/game.js"></script>
 
 </body>
 </html>

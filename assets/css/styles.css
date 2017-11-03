@@ -1,0 +1,92 @@
+/*trying out an animation*/
+html, body {
+	height: 100%;
+ 	background: #FBE7C5;
+ 	font-family: 'Rozha One', sans serif;
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -30px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+.row {
+	margin-bottom: 25px;
+}
+
+#game-header {
+	text-align: center;
+	margin: 50px;
+}
+
+#instructions {
+	font-style: italic;
+}
+
+.ball {
+  width: 150px;
+  height: 150px;
+  background: #F45B69;
+  border-radius: 100%;
+  margin: auto; 
+ }
+
+ .scores {
+ 	position: relative;
+ 	top: 38px;
+	left: 61px;
+	bottom: 20px;
+	font-size: 3.0em;
+	color: white;
+}
+
+.counter-caption {
+	position: relative;
+	top: 20px;
+	bottom: 0;
+}
+
+h4 {
+	margin: auto;
+	text-align: center;
+}
+
+#guesses-area {
+	margin-top: 100px;
+}
+
+#guesses-so-far {
+	text-align: center;
+	font-size: 3.0em;
+}
+
+#alert-area{
+	text-align: center;
+	font-size: 3.0em;
+}
+
+#footer {
+  height: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.ball {
+		margin: 0px 0px 30px 180px;
+	}
+	
+	.counter-caption {
+		position: absolute;
+		text-align: center;
+		margin: 10px;
+
+	}
+	
+}
+
+
