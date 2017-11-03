@@ -2,7 +2,7 @@
 html, body {
 	height: 100%;
  	background: #FBE7C5;
- 	font-family: 'Rozha One', sans serif;
+ 	font-family: 'Raleway', sans-serif;
 }
 
 #wrapper {
@@ -23,9 +23,7 @@ html, body {
 	margin: 50px;
 }
 
-#instructions {
-	font-style: italic;
-}
+
 
 .ball {
   width: 150px;
@@ -56,7 +54,7 @@ h4 {
 }
 
 #guesses-area {
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 #guesses-so-far {
